@@ -12,9 +12,11 @@ struct Category {
   
   private (set) public var imageName : String
   private (set) public var categoryName : String
+  private (set) public var productEnum : ProductEnum
   
-  init(_ imageName : String, _ categoryName:String) {
+  init(_ imageName : String, _ categoryName:String, _ productEnum : ProductEnum) {
     self.imageName = imageName
     self.categoryName = categoryName
+    self.productEnum  = productEnum
   }
 }

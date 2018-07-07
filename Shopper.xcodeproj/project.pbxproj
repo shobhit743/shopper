@@ -11,6 +11,9 @@
 		EE29A8FD20EF714000FA1707 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29A8FC20EF714000FA1707 /* DataService.swift */; };
 		EE29A8FF20EF73AA00FA1707 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29A8FE20EF73AA00FA1707 /* Product.swift */; };
 		EE29A90220EFF55B00FA1707 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29A90120EFF55B00FA1707 /* CategoryTableViewCell.swift */; };
+		EE29A90420F08FE200FA1707 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29A90320F08FE200FA1707 /* ProductViewController.swift */; };
+		EE29A90720F0916400FA1707 /* ProductEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29A90620F0916400FA1707 /* ProductEnum.swift */; };
+		EE29A90B20F0934200FA1707 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29A90A20F0934200FA1707 /* ProductCollectionViewCell.swift */; };
 		EEB14CEF20EE48FC0076F09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB14CEE20EE48FC0076F09E /* AppDelegate.swift */; };
 		EEB14CF120EE48FD0076F09E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB14CF020EE48FD0076F09E /* ViewController.swift */; };
 		EEB14CF420EE48FD0076F09E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB14CF220EE48FD0076F09E /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		EE29A8FC20EF714000FA1707 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		EE29A8FE20EF73AA00FA1707 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		EE29A90120EFF55B00FA1707 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		EE29A90320F08FE200FA1707 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		EE29A90620F0916400FA1707 /* ProductEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEnum.swift; sourceTree = "<group>"; };
+		EE29A90A20F0934200FA1707 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		EEB14CEB20EE48FC0076F09E /* Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB14CEE20EE48FC0076F09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEB14CF020EE48FD0076F09E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,8 +53,17 @@
 			isa = PBXGroup;
 			children = (
 				EE29A90120EFF55B00FA1707 /* CategoryTableViewCell.swift */,
+				EE29A90A20F0934200FA1707 /* ProductCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EE29A90520F0914A00FA1707 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				EE29A90620F0916400FA1707 /* ProductEnum.swift */,
+			);
+			path = enum;
 			sourceTree = "<group>";
 		};
 		EEB14CE220EE48FC0076F09E = {
@@ -70,6 +85,7 @@
 		EEB14CED20EE48FC0076F09E /* Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				EE29A90520F0914A00FA1707 /* enum */,
 				EE29A90020EFF51D00FA1707 /* View */,
 				EEB14D0220EE498A0076F09E /* Model */,
 				EEB14D0120EE49800076F09E /* Controller */,
@@ -95,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				EEB14CF020EE48FD0076F09E /* ViewController.swift */,
+				EE29A90320F08FE200FA1707 /* ProductViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,9 +198,12 @@
 			files = (
 				EEB14CF120EE48FD0076F09E /* ViewController.swift in Sources */,
 				EEB14CEF20EE48FC0076F09E /* AppDelegate.swift in Sources */,
+				EE29A90720F0916400FA1707 /* ProductEnum.swift in Sources */,
 				EE29A8FF20EF73AA00FA1707 /* Product.swift in Sources */,
+				EE29A90420F08FE200FA1707 /* ProductViewController.swift in Sources */,
 				EE29A8FA20EF706D00FA1707 /* Category.swift in Sources */,
 				EE29A8FD20EF714000FA1707 /* DataService.swift in Sources */,
+				EE29A90B20F0934200FA1707 /* ProductCollectionViewCell.swift in Sources */,
 				EE29A90220EFF55B00FA1707 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

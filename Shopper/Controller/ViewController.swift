@@ -19,6 +19,15 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let productVC = segue.destination as? ProductViewController {
+      let backBtn = UIBarButtonItem()
+      backBtn.title = ""
+      self.navigationItem.backBarButtonItem = backBtn
+      productVC.category = (sender as! Category)
+    }
+  }
+  
   
 }
 
@@ -41,5 +50,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource  {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 150
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: "productVCSegue", sender: DataService.instance.getCategories()[indexPath.row])
   }
 }
